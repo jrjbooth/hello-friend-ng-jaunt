@@ -30,7 +30,8 @@
 
     & > *:not(:last-child)::after {
       content: "•";
-      padding: 0 5px;
+      padding: 0 5px 0 8px;
+      color: $accent;
 
       @media #{$media-size-tablet} {
           content: "";

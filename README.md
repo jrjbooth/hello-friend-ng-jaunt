@@ -1,56 +1,6 @@
-# Hello Friend NG
+# Hello Friend NG Jaunt
 
-![Hello Friend NG](https://dsh.re/2bd45)
-
-## General informations
-
-This theme was highly inspired by the [hello-friend](https://github.com/panr/hugo-theme-hello-friend) and [hermit](https://github.com/Track3/hermit). A lot of kudos for their great work.
-
----
-## Table of Contents
-
-- [Features](#features)
-- [How to start](#how-to-start)
-- [How to configure](#how-to-configure)
-- [More](#more-things)
-  - [Built in shortcodes](#built-in-shortcodes)
-    - [image](#image)
-  - [Code highlighting](#code-highlighting)
-  - [Favicon](#favicon)
-- [Social Icons](#social-icons)
-- [Known issues](#known-issues)
-- [How to edit the theme](#how-to-edit-the-theme)
-- [Changelog](CHANGELOG.md)
-- [Sponsoring](#sponsoring)
-- [Licence](#licence)
-
----
-## Features
-
-- Theming: **dark/light mode**, depending on your preferences (dark is default, but you can change it)
-- Great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
-- Nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- An easy way to modify the theme with Hugo tooling
-- Fully responsive
-- Support for social icons
-- Support for sharing buttons
-
-
-## How to start
-
-You can download the theme manually by going to [https://github.com/rhazdon/hugo-theme-hello-friend-ng.git](https://github.com/rhazdon/hugo-theme-hello-friend-ng.git) and pasting it to `themes/hello-friend-ng` in your root directory.
-
-You can also clone it directly to your Hugo folder:
-
-``` bash
-$ git clone https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
-```
-
-If you don't want to make any radical changes, it's the best option, because you can get new updates when they are available. To do so, include it as a git submodule:
-
-``` bash
-$ git submodule add https://github.com/rhazdon/hugo-theme-hello-friend-ng.git themes/hello-friend-ng
-```
+A variant of the Hello Friend NG theme with some Jaunty accents and angles.
 
 ## How to configure
 
@@ -174,15 +124,10 @@ Either you comment it out completely or you write the following in
 
 ## How to edit the theme
 
-Just edit it. You don't need any node stuff. ;)
-
-## Sponsoring
-
-If you like my work and if you think this project is worth to support it, just <br />
-<a href="https://www.buymeacoffee.com/djordjeatlialp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+Just edit it. You don't need any node stuff.
 
 ## Licence
 
-Copyright © 2019-2020 Djordje Atlialp
+Copyright © 2020 James Booth
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.

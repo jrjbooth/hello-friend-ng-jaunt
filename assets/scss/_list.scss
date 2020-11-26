@@ -21,9 +21,11 @@
     display: flex;
     margin-bottom: 1.9em;
     line-height: normal;
+    position: relative;
 
     @media #{$media-size-tablet} {
       display: block;
+      position: unset;
     }
   }
 
@@ -32,6 +34,10 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-left: 2em;
+    @media #{$media-size-tablet} {
+      margin-left: 0;
+    }
   }
 
   .post {
@@ -41,18 +47,28 @@
     }
 
     &-year {
-      padding-top: 6px;
-      margin-right: 1.8em;
       font-size: 1.6em;
-      @include dimmed;
-
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 1.4em;
+      left: -0.9em;
+      color: $accent;
+      
       @media #{$media-size-tablet} {
+        padding-top: 6px;
+        margin-right: 1.8em;
+        font-size: 1.6em;
         margin: -6px 0 4px;
+        transform: rotate(0);
+        position: unset;
       }
     }
 
     &-item {
-      border-bottom: 1px grey dashed;
+      border-bottom: 1px $accent solid;
+      &:last-of-type {
+        border-bottom: none;
+      }
 
       a {
         display: flex;
@@ -64,9 +80,9 @@
     }
 
     &-day {
-      flex-shrink: 0;
+      // flex-shrink: 0;
       margin-left: 1em;
-      @include dimmed;
+      // @include dimmed;
     }
   }
 }

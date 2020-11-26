@@ -82,6 +82,9 @@ h4 {
 
 a {
   color: inherit;
+  &:hover {
+    color: $accent;
+  }
 }
 
 img {
@@ -99,11 +102,6 @@ img {
 
   &.right {
     margin-left: auto;
-  }
-  &.circle {
-    border-radius: 50%;
-    max-width: 25%;
-    margin: auto;
   }
 }
 
@@ -272,16 +270,23 @@ ol ol {
 hr {
   width: 100%;
   border: none;
-  background: $light-border-color;
+  background: $accent;
   height: 1px;
 
-  .dark-theme & {
-    background: $dark-border-color;
-  }
+  // .dark-theme & {
+  //   background: $dark-border-color;
+  // }
 }
 
 .hidden {
   display: none;
+}
+
+.accent,
+h1,
+h2,
+h3 {
+  color: $accent;
 }
 
 .hide-on-phone {
