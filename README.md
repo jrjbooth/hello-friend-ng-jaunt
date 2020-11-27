@@ -12,7 +12,7 @@ Note: There are more options to configure. Take a look into the `config.toml` in
 baseurl      = "localhost"
 title        = "My Blog"
 languageCode = "en-us"
-theme        = "hello-friend-ng"
+theme        = "hello-friend-ng-jaunt"
 paginate     = 10
 
 [params]
@@ -27,7 +27,7 @@ paginate     = 10
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
 
-  # Enable sharing buttons, if you linke
+  # Enable sharing buttons, if you like
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
