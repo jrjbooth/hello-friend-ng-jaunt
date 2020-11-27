@@ -128,6 +128,4 @@ Just edit it. You don't need any node stuff.
 
 ## Licence
 
-Copyright © 2020 James Booth
-
-The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the [MIT License](https://github.com/jrjbooth/hello-friend-ng-jaunt/blob/master/LICENSE.md).
