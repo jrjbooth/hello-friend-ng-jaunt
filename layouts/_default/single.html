@@ -1,14 +1,8 @@
 {{ define "main" }}
     <main class="post">
 
-        <div class="post-info">
-
-        </div>
-
         <article>
             <h1 class="post-title">{{ .Title | markdownify }}</h1>
-
-            
 
             {{ if .Params.toc }}
                 <hr />
