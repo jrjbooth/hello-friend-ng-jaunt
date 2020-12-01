@@ -85,14 +85,14 @@
         </div>
 
         <div class="pagination__buttons">
-          {{ if .NextInSection }}
-            <span class="previous">
+          <span class="previous">
+            {{ if .NextInSection }}
               <a href="{{ .NextInSection.Permalink }}">
                 <span class="button__icon">←</span>
                 <span class="button__text">{{ .NextInSection.Title }}</span>
               </a>
+              {{ end }}
             </span>
-          {{ end }}
 
           {{ if .PrevInSection }}
             <span class="next">
