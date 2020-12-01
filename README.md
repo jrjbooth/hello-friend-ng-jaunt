@@ -5,66 +5,7 @@ A variant of the Hello Friend NG theme with some Jaunty accents and angles.
 ## How to configure
 
 The theme doesn't require any advanced configuration. Just copy the following config file.
-To see all possible configurations, [check the docs](docs/config.md).
-Note: There are more options to configure. Take a look into the `config.toml` in `exampleSite`.
-
-``` toml
-baseurl      = "localhost"
-title        = "My Blog"
-languageCode = "en-us"
-theme        = "hello-friend-ng-jaunt"
-paginate     = 10
-
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
-
-  # Subtitle for home
-  homeSubtitle = "A simple and beautiful blog"
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
-
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
-
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
-  images = [""]
-
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
-
-[taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
-
-[languages]
-  [languages.en]
-    title = "Hello Friend NG"
-    subtitle = "A simple theme for Hugo"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      logoText = "hello friend ng"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
-```
+To see all possible configurations best to check the theme this was forked from.
 
 ## More things
 
