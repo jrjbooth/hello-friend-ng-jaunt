@@ -93,7 +93,8 @@
     &-day {
       // flex-shrink: 0;
       margin-left: 1em;
-      // @include dimmed;
+      @include dimmed;
+      font-family: monospace, monospace;
     }
   }
 }
