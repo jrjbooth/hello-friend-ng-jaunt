@@ -1,5 +1,4 @@
 {{ define "main" }}
-    {{ $paginator := .Paginate .Data.Pages }}
     
     <main class="posts">
         <h1>{{ .Title }}</h1>
@@ -10,21 +9,18 @@
             <div class="content">{{ .Content }}</div>
         {{ end }}
 
-        {{ range $paginator.Pages.GroupByDate "2006" }}
+        {{ range $key, $taxonomy := .Site.Taxonomies.field }}
             <div class="posts-group">
-                <div class="post-group-tag">{{ .Key }}</div>
-
+                <!-- <div class="post-group-container"> -->
+                    <div class="post-group-tag">{{ $key }}</div>
+                <!-- </div> -->
                 <ul class="posts-list">
-                    {{ range .Pages }}
+                    {{ range .Pages.ByTitle }}
                         <li class="post-item">
                             <a href="{{.Permalink}}">
                                 <span class="post-title">{{.Title}}</span>
                                 <span class="post-day">
-                                    {{ if .Site.Params.dateformShort }}
-                                        {{ .Date.Format .Site.Params.dateformShort }}
-                                    {{ else }}
-                                        {{ .Date.Format "Jan 2"}}
-                                    {{ end }}
+                                    {{ .Date.Format "Jan 2 2006" }}
                                 </span>
                             </a>
                         </li>
@@ -32,6 +28,5 @@
                 </ul>
             </div>
         {{ end }}
-    {{ partial "pagination.html" . }}
     </main>
 {{ end }}
