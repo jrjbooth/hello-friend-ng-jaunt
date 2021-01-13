@@ -97,4 +97,32 @@
       font-family: monospace, monospace;
     }
   }
+
+  .tax {
+    &-group {
+      display: flex;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      line-height: normal;
+      position: relative;
+  
+      @media #{$media-size-tablet} {
+        display: block;
+        position: unset;
+      }
+    }
+    &-list {
+      column-count: 2;
+      margin-left: 0;
+      list-style: none;
+      width: 100%;
+      @media #{$media-size-tablet} {
+        column-count: 1;
+        text-align: center;
+      }
+    }
+    &-item{
+      width: 100%;
+    }
+  }
 }
