@@ -51,6 +51,7 @@
     &-title {
       font-size: 1rem;
       margin: 5px 0 5px 0;
+      text-align: left;
     }
 
     &-group-tag {
@@ -95,6 +96,8 @@
       margin-left: 1em;
       @include dimmed;
       font-family: monospace, monospace;
+      min-width: 4rem;
+      text-align: right;
     }
   }
 
@@ -106,23 +109,25 @@
       line-height: normal;
       position: relative;
   
-      @media #{$media-size-tablet} {
-        display: block;
-        position: unset;
-      }
     }
     &-list {
-      column-count: 2;
       margin-left: 0;
       list-style: none;
       width: 100%;
-      @media #{$media-size-tablet} {
-        column-count: 1;
-        text-align: center;
-      }
     }
     &-item{
-      width: 100%;
+      border-bottom: 1px $accent solid;
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 12px 0;
+        text-decoration: none;
+      }
     }
   }
 }

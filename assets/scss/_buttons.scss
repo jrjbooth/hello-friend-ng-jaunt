@@ -7,12 +7,13 @@
 button,
 .button,
 a.button {
+  font-family: monospace, monospace;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 18px;
-  margin-bottom: 5px;
+  padding: .4rem .8rem;
+  margin-bottom: 1rem;
   background: $light-background-secondary;
   text-decoration: none;
   text-align: center;
@@ -26,6 +27,12 @@ a.button {
   .dark-theme & {
     background: $dark-background-secondary;
     color: inherit;
+  }
+
+  &:hover {
+    border-color: $accent;
+    transform: none;
+    box-shadow: none;
   }
 
   /* variants */
@@ -95,5 +102,23 @@ a.button {
       background: $dark-background-secondary;
       color: inherit;
     }
+  }
+}
+
+.category {
+  &-list{
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      // display: inline-block;
+      >.button {
+        // margin-right: 1rem;
+        margin-left: 0 !important;
+        white-space: nowrap;
+        font-size: 0.9rem;
+
+      }
   }
 }
