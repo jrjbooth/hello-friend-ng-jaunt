@@ -1,0 +1,9 @@
+table {
+  td, th {
+    &:first-child,
+    &:last-child {
+      padding: 0;
+    }
+    padding: 0 1rem
+  }
+}
